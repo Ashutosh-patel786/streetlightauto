@@ -18,9 +18,9 @@ while True:
     try: 
         sensor_value = int(data['value']) 
         if maximum_limit1 <sensor_value > maximum_limit2 :
-            response = sms.send_sms("Hi there Turn OFF the Street Lights Of Kolar region Bhopal")
+            response = sms.send_sms("Hi there Turn OFF the Street Light of your area")
         elif sensor_value < minimum_limit:
-            response = sms.send_sms("Hi there Turn ON the Street Lights Of Kolar region Bhopal")
+            response = sms.send_sms("Hi there Turn ON the Street Lights of your area")
     except Exception as e: 
         print ("Error occured: Below are the details")
         print (e)
